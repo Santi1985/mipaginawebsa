@@ -1,75 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Películas Recomendadas</title>
+  <link rel="stylesheet" href="estilos.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Las Mejores Peliculas para ver en Familia</h1>
-    <p>Te damos una seleccion de las mejores peliculas para ver</p>
+  <aside class="redes-sociales">
+    <img class="red" src="img/instagram.png" alt="Instagram" />
+    <img class="red" src="img/facebook.png" alt="Facebook" />
+    <img class="red" src="img/x.png" alt="X (antes Twitter)" />
+  </aside>
+
+  <header class="header">
+    <h1>Las Mejores Películas para ver en Familia</h1>
   </header>
-  
-  <div>
-    <section>
-      <h4>Toy Story</h4>
-      <img src="img/toystory.jpg" alt="Toy Story">
-      <a href="https://www.disneyplus.com/es-ec/browse/entity-f6174ebf-cb92-453c-a52b-62bb3576e402?distributionPartner=google" target="_blank">Donde Verla:</a>
+
+  <nav class="navegacion">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="libros.html">Libros</a></li>
+      <li><a href="peliculas.html">Películas</a></li>
+      <li><a href="videojuegos.html">Videojuegos</a></li>
+    </ul>
+  </nav>
+
+  <main class="contenedor-principal">
+    <section class="contenido">
+      <p>
+        Te ofrecemos una cuidada selección de las mejores películas para ver, ideal para disfrutar solo, en pareja o con amigos. Esta colección incluye desde clásicos inolvidables del cine hasta los últimos éxitos que han conquistado la pantalla grande y las plataformas de streaming. Encontrarás historias emocionantes, conmovedoras y sorprendentes, que te harán reír, llorar, reflexionar o simplemente pasar un gran momento. Sea cual sea tu estado de ánimo o tu género favorito, aquí hay una película esperando por ti
+      </p>
+
+      <!-- Toy Story -->
+      <div class="reseña fila peliculas">
+        <div class="imagen">
+          <img src="img/toystory.jpg" alt="Toy Story" />
+        </div>
+        <div class="texto">
+          <h3>Toy Story</h3>
+          <p>Toy Story, la revolucionaria saga de animación de Pixar, nos sumerge en un mundo donde los juguetes cobran vida cuando los humanos no están presentes. Desde su innovador debut en 1995, estas películas han cautivado a audiencias de todas las edades con las aventuras de Woody, un vaquero clásico, y Buzz Lightyear, un astronauta de juguete, y su conmovedora amistad.</p>
+          <p>La franquicia explora temas universales como la amistad, la lealtad, el miedo al abandono y el propósito de la vida de un juguete. Con su humor ingenioso, personajes entrañables y mensajes profundos, "Toy Story" se ha consolidado como un hito en la animación y un recordatorio atemporal del valor de la infancia y los lazos que nos unen.</p>
+          <a href="https://www.disneyplus.com/es-ec/browse/entity-f6174ebf-cb92-453c-a52b-62bb3576e402?distributionPartner=google" target="_blank" class="boton">Dónde verla</a>
+        </div>
+      </div>
+
+      <!-- El Rey León (invertida) -->
+      <div class="reseña fila invertida peliculas">
+        <div class="imagen">
+          <img src="img/reyleon.jpg" alt="El Rey León" />
+        </div>
+        <div class="texto">
+          <h3>El Rey León (Año 1994)</h3>
+          <p>El Rey León, una de las joyas más preciadas de Disney, es una saga cinematográfica que nos transporta al corazón de la sabana africana, donde la vida y el ciclo sin fin son protagonistas. Desde su aclamado debut animado en 1994, estas películas narran la conmovedora historia de Simba, un joven cachorro de león destinado a gobernar las Tierras del Reino.</p>
+          <p>La saga explora temas universales como el crecimiento, la responsabilidad, la pérdida y el descubrimiento del verdadero lugar de uno en el mundo. Con personajes inolvidables como Mufasa, Scar, Timón y Pumba, y una banda sonora icónica, "El Rey León" ha resonado con audiencias de todas las edades, consolidándose como un clásico atemporal que celebra la familia, la amistad y el "Hakuna Matata".</p>
+          <a href="https://www.disneyplus.com/es-ec/browse/entity-a3ae7371-39a5-4c0b-a1f2-29a70b372848?distributionPartner=google" target="_blank" class="boton">Dónde verla</a>
+        </div>
+      </div>
+
+      <!-- Harry Potter -->
+      <div class="reseña fila peliculas">
+        <div class="imagen">
+          <img src="img/harrypotter.webp" alt="Harry Potter" />
+        </div>
+        <div class="texto">
+          <h3>Harry Potter</h3>
+          <p>La saga cinematográfica de Harry Potter, basada en las aclamadas novelas de J.K. Rowling, nos sumerge en un universo de magia, amistad y aventura. Desde el momento en que Harry Potter descubre que es un mago y asiste a la escuela Hogwarts de Magia y Hechicería, el público es transportado a un mundo lleno de hechizos, criaturas fantásticas y secretos ancestrales.</p>
+          <p>A lo largo de ocho películas, seguimos a Harry y sus inseparables amigos, Ron Weasley y Hermione Granger, mientras enfrentan desafíos, crecen y se preparan para el inevitable enfrentamiento contra el oscuro mago Lord Voldemort. La saga explora temas de amor, pérdida, valentía y el poder de la elección, convirtiéndose en un fenómeno global que ha encantado a generaciones.</p>
+          <a href="https://www.max.com/ec/es/channel/harry-potter" target="_blank" class="boton">Dónde verla</a>
+        </div>
+      </div>
+
+      <!-- Star Wars (invertida) -->
+      <div class="reseña fila invertida peliculas">
+        <div class="imagen">
+          <img src="img/starwars.png" alt="Star Wars" />
+        </div>
+        <div class="texto">
+          <h3>Star Wars</h3>
+          <p>Star Wars, la monumental creación de George Lucas, es mucho más que una serie de películas; es un fenómeno cultural que ha moldeado la imaginación de millones en todo el mundo. Desde el lanzamiento de "Una Nueva Esperanza" en 1977, esta ópera espacial nos ha sumergido en un universo vasto y vibrante, donde la eterna batalla entre la luz y la oscuridad se personifica en los nobles Jedi y los malévolos Sith.</p>
+          <p>A través de sus múltiples trilogías, spin-offs y series, Star Wars ha construido una rica mitología, poblada por héroes inolvidables, villanos icónicos, droides entrañables y criaturas fantásticas. Con sus innovadores efectos especiales, épicas batallas espaciales y una banda sonora que resuena en la memoria colectiva, la saga explora temas profundos como la amistad, el sacrificio, la familia y la búsqueda de la identidad, dejando una huella imborrable en la historia del cine y en el corazón de sus fans.</p>
+          <a href="https://www.disneyplus.com/es-ec/browse/entity-e0a9fee4-2959-4077-ad8c-8fab4fd6e4d1?distributionPartner=google" target="_blank" class="boton">Dónde verla</a>
+        </div>
+      </div>
     </section>
-    <section>
-      <h4>Reseña</h4>
-      <p>Toy Story, la revolucionaria saga de animación de Pixar, nos sumerge en un mundo donde los juguetes cobran vida cuando los humanos no están presentes. Desde su innovador debut en 1995, estas películas han cautivado a audiencias de todas las edades con las aventuras de Woody, un vaquero clásico, y Buzz Lightyear, un astronauta de juguete, y su conmovedora amistad.</p>
-      <p>La franquicia explora temas universales como la amistad, la lealtad, el miedo al abandono y el propósito de la vida de un juguete. Con su humor ingenioso, personajes entrañables y mensajes profundos, "Toy Story" se ha consolidado como un hito en la animación y un recordatorio atemporal del valor de la infancia y los lazos que nos unen.</p>
-    </section>
-  </div>
-  
-  <div>
-    <section>
-      <h4>Reseña</h4>
-      <p>El Rey León, una de las joyas más preciadas de Disney, es una saga cinematográfica que nos transporta al corazón de la sabana africana, donde la vida y el ciclo sin fin son protagonistas. Desde su aclamado debut animado en 1994, estas películas narran la conmovedora historia de Simba, un joven cachorro de león destinado a gobernar las Tierras del Reino.</p>
-      <p>La saga explora temas universales como el crecimiento, la responsabilidad, la pérdida y el descubrimiento del verdadero lugar de uno en el mundo. Con personajes inolvidables como Mufasa, Scar, Timón y Pumba, y una banda sonora icónica, "El Rey León" ha resonado con audiencias de todas las edades, consolidándose como un clásico atemporal que celebra la familia, la amistad y el "Hakuna Matata".</p>
-    </section>
-    <section>
-      <h4>El rey león (Año 1994)</h4>
-      <img src="img/reyleon.jpg" alt="El Rey Leon">
-      <a href="https://www.disneyplus.com/es-ec/browse/entity-a3ae7371-39a5-4c0b-a1f2-29a70b372848?distributionPartner=google" target="_blank">Donder Verla:</a>
-    </section>
-  </div>
-      
-  <div>
-    <section>
-      <h4>Harry Potter</h4>
-      <img src="img/harrypotter.webp" alt="Harry Potter">
-      <a href="https://www.max.com/ec/es/channel/harry-potter" target="_blank">Donde Verla:</a>
-    </section>
-    <section>
-      <h4>Reseña</h4>
-      <p>La saga cinematográfica de Harry Potter, basada en las aclamadas novelas de J.K. Rowling, nos sumerge en un universo de magia, amistad y aventura. Desde el momento en que Harry Potter descubre que es un mago y asiste a la escuela Hogwarts de Magia y Hechicería, el público es transportado a un mundo lleno de hechizos, criaturas fantásticas y secretos ancestrales.</p>
-      <p>A lo largo de ocho películas, seguimos a Harry y sus inseparables amigos, Ron Weasley y Hermione Granger, mientras enfrentan desafíos, crecen y se preparan para el inevitable enfrentamiento contra el oscuro mago Lord Voldemort. La saga explora temas de amor, pérdida, valentía y el poder de la elección, convirtiéndose en un fenómeno global que ha encantado a generaciones.</p>
-    </section>
-  </div>
-      
-  <div>
-    <section>
-      <h4>Reseña</h4>
-      <p>Star Wars, la monumental creación de George Lucas, es mucho más que una serie de películas; es un fenómeno cultural que ha moldeado la imaginación de millones en todo el mundo. Desde el lanzamiento de "Una Nueva Esperanza" en 1977, esta ópera espacial nos ha sumergido en un universo vasto y vibrante, donde la eterna batalla entre la luz y la oscuridad se personifica en los nobles Jedi y los malévolos Sith.</p>
-      <p>A través de sus múltiples trilogías, spin-offs y series, Star Wars ha construido una rica mitología, poblada por héroes inolvidables, villanos icónicos, droides entrañables y criaturas fantásticas. Con sus innovadores efectos especiales, épicas batallas espaciales y una banda sonora que resuena en la memoria colectiva, la saga explora temas profundos como la amistad, el sacrificio, la familia y la búsqueda de la identidad, dejando una huella imborrable en la historia del cine y en el corazón de sus fans</p>
-    </section>
-    <section>
-      <h4>Star Wars</h4>
-      <img src="img/starwars.jpg" alt="Star Wars">
-      <a href="https://www.disneyplus.com/es-ec/browse/entity-e0a9fee4-2959-4077-ad8c-8fab4fd6e4d1?distributionPartner=google" target="_blank">Donde Verla:</a>
-    </section>
-  </div>
-       
-  <footer>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="libros.html">Libros</a>
-      <a href="peliculas.html">Peliculas</a>
-      <a href="videojuegos.html">Video Juegos</a>
-    </nav>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Mi Sitio Web. Santiago Alvarez B.</p>
   </footer>
 </body>
 </html>
